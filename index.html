@@ -12,15 +12,18 @@
             padding: 20px;
             background-color: #f4f4f4;
         }
-        h1 {
+        h1, h2 {
             color: #333;
             text-align: center;
+        }
+        h1 {
             margin-bottom: 30px;
         }
         nav {
             background-color: #333;
             padding: 10px;
             border-radius: 5px;
+            margin-bottom: 30px;
         }
         nav ul {
             list-style: none;
@@ -39,15 +42,49 @@
         nav a:hover {
             color: #ddd;
         }
-        p {
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .featured {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .feature-item {
+            flex: 1;
+            min-width: 250px;
             text-align: center;
-            color: #666;
+        }
+        .news-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            color: #ddd;
         }
     </style>
 </head>
 <body>
     <h1>Welcome to New Society</h1>
-    <p>This is a simple test page for our new project.</p>
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -55,5 +92,50 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+
+    <div class="section">
+        <h2>Our Mission</h2>
+        <p>We strive to create a more connected and sustainable future through innovation and collaboration. Our goal is to bring people together and make a positive impact on society.</p>
+    </div>
+
+    <div class="section">
+        <h2>Featured Highlights</h2>
+        <div class="featured">
+            <div class="feature-item">
+                <h3>Innovation</h3>
+                <p>Pushing boundaries and exploring new possibilities</p>
+            </div>
+            <div class="feature-item">
+                <h3>Community</h3>
+                <p>Building strong connections and fostering collaboration</p>
+            </div>
+            <div class="feature-item">
+                <h3>Sustainability</h3>
+                <p>Creating lasting positive impact for future generations</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Latest Updates</h2>
+        <div class="news-item">
+            <h3>New Partnership Announced</h3>
+            <p>Exciting collaboration with leading tech companies to advance our mission.</p>
+        </div>
+        <div class="news-item">
+            <h3>Community Event</h3>
+            <p>Join us for our monthly meetup to discuss future initiatives.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2025 New Society. All rights reserved.</p>
+    </footer>
 </body>
 </html>
